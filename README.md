@@ -2,8 +2,6 @@
 
 This project provides a detailed step-by-step guide to install **Ubuntu Base 20.04 ARM64** with a **Graphical User Interface (GUI)** on the **phyCORE-i.MX8MP** board.
 
-> 📄 Document Author: Venkatesh M (Embedded System Engineer)  
-> 📧 Email: venkatesh.m@phytecembedded.in  
 
 ---
 
