@@ -45,19 +45,18 @@ This repository includes:
 sudo apt update && sudo apt upgrade
 sudo apt install gparted qemu qemu-user-static minicom
 ```
-```bash
 ### 2. Prepare the SD Card
 Use dd to write the .sdcard image to the SD card
 
 Resize root partition using GParted
 ```
-```bash
+```
 ### 3. Mount and Extract Ubuntu Base
 
 sudo mount /dev/sdX2 /mnt
 sudo tar -xvf ubuntu-base-20.04.1-base-arm64.tar.gz -C /mnt
 ```
-```bash
+```
 ### 4. Chroot and Configure Ubuntu
 
 sudo chroot /mnt
