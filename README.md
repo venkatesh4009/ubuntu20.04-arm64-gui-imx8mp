@@ -95,9 +95,15 @@ sudo reboot
 Login as user phytec with GUI ready.
 ```
 
-### ✉️ Contact
-For support or questions, please contact:
+---
 
-Venkatesh M
-Embedded Systems Engineer
-venkatesh.m@phytecembedded.in
+👨‍💼 Author
+
+Developed by:
+
+Venkatesh M – venkatesh.m@phytecembedded.com
+
+Embedded System Engineer
+
+---
+
