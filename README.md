@@ -41,27 +41,36 @@ This repository includes:
 ## ⚙️ Installation Steps Overview
 
 ### 1. Install Required Packages on Host PC
-
+```bash
 sudo apt update && sudo apt upgrade
 sudo apt install gparted qemu qemu-user-static minicom
-2. Prepare the SD Card
+```
+```bash
+### 2. Prepare the SD Card
 Use dd to write the .sdcard image to the SD card
 
 Resize root partition using GParted
-
-3. Mount and Extract Ubuntu Base
+```
+```bash
+### 3. Mount and Extract Ubuntu Base
 
 sudo mount /dev/sdX2 /mnt
 sudo tar -xvf ubuntu-base-20.04.1-base-arm64.tar.gz -C /mnt
-4. Chroot and Configure Ubuntu
+```
+```bash
+### 4. Chroot and Configure Ubuntu
 
 sudo chroot /mnt
 apt update && apt install ubuntu-desktop
-5. Add a New User
+```
+```bash
+### 5. Add a New User
 
 adduser phytec
 usermod -aG sudo phytec
-6. Configure Display (X11)
+```
+```bash
+### 6. Configure Display (X11)
 Edit /etc/X11/xorg.conf and add resolution modelines and preferred driver (fbdev or vesa).
 
 🧪 First Boot on i.MX8MP Board
@@ -70,19 +79,20 @@ Insert SD card and power on the board
 Use minicom or putty via UART (e.g., /dev/ttymxc0)
 
 Login with user phytec and the password you created
-
-🌐 Network Setup
+```
+```bash
+### 🌐 Network Setup
 
 sudo ip link set eth1 up
 sudo dhclient eth1
 ping google.com
+
 🔁 Reboot and Login
 After everything is configured:
 
-
 sudo reboot
 Login as user phytec with GUI ready.
-
+```
 
 ✉️ Contact
 For support or questions, please contact:
