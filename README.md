@@ -163,7 +163,7 @@ $ ping google.com
 
 Developed by:
 
-Venkatesh M – venkatesh.m@phytecembedded.in
+Venkatesh M – venkatesh.m@phytecembedded.com
 
 Embedded System Engineer
 
